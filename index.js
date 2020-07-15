@@ -30,7 +30,7 @@ function showResult(result) {
 
     data.forEach(gif => {
         let div =
-        <div class="custom-grid">
+        <div class="custom-grid"></div>
         <img src="${gif.images.downsized.url}">
         </div>
     ;
