@@ -11,3 +11,13 @@ $(document).keyup(function (event) {
     }
 });
 
+function searchFromGiphy(query) {
+    $.ajax({
+        url: GiphyApi + GiphyApikey + '&q=' + query,
+        contentType: "application/json",
+        dataType: 'json'
+        success: function (result) {
+            showResult(result)
+        }
+    })
+}
