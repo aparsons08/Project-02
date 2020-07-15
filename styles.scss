@@ -37,3 +37,20 @@ input[type=text]:focus {
 .search-contents{
     padding: 20px 25px;
 }
+
+@media only screen and (min-width: 600px) {
+    .custom-grid{
+        width: calc(100% /2);
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .custom-grid{
+        width: calc(100% /4);
+        padding: 10px;
+    }
+    .search-contents{
+        padding: 20px 125px;
+    }
+}
